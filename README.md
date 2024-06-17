@@ -18,8 +18,11 @@ Lorsque vous rechercherez un lieu, il est possible qu'aucune proposition ne char
 
 > Si vous avez Flutter et Chrome, une méthode simple [trouvée sur Stack Overflow](https://stackoverflow.com/questions/65630743/how-to-solve-flutter-web-api-cors-error-only-with-dart-code) permet de désactiver la protection CORS et d'accéder à toutes les fonctionnalités de l'application :
 > 1. Allez dans `flutter\bin\cache` et supprimez le fichier `flutter_tools.stamp`
+>
 > 2. Allez dans `flutter\packages\flutter_tools\lib\src\web` et ouvrez `chrome.dart`
+>
 > 3. Recherchez  `'--disable-extensions'` et ajoutez `'--disable-web-security'`
+
 
 _NB : Vous aurez le même problème de requête bloquée par le navigateur en téléchargeant la source et en l'exécutant depuis votre machine._
 
@@ -48,7 +51,7 @@ _NB : Vous aurez le même problème de requête bloquée par le navigateur en t�
 
 # Dépendances utilisées
 
-### Localisation et météo
+### Services
 
 - **`Open-meteo.com`** permet de récupérer un jeu complet de données météorologique pour des coordonnées données
 - **`Google Maps Places`** propose 2 APIs que j'utilise pour que l'utilisateur sélectionne un lieu : 
@@ -62,6 +65,7 @@ _NB : Vous aurez le même problème de requête bloquée par le navigateur en t�
 - **`Syncfusion Flutter Datepicker`** parce que même Material Design a ses limites
 
 ### Utilitaires
+
 - **`http`** pour appeler les différentes APIs
 - **`uuid`** pour générer un token à envoyer à l'API Autocomplete
 - **`intl`** pour le formattage des dates
@@ -71,8 +75,8 @@ _NB : Vous aurez le même problème de requête bloquée par le navigateur en t�
 
 
 # Organisation des fichiers
-Un arbre vaut mieux qu'un long discours  🌱
 
+Un arbre vaut mieux qu'un long discours  🌱
 
 ```scss
 📦 climatech/lib/
@@ -101,12 +105,12 @@ Un arbre vaut mieux qu'un long discours  🌱
  ┃
  ┣ 📂 screens/
  ┃ ┣ 📄 screen_home.dart            // Page unique de l'app
- ┃ ┗ 📄 screen_splash.dart          // Ecran de chargement
+ ┃ ┗ 📄 screen_splash.dart          // Écran de chargement
  ┃
  ┗ 📂 widgets/
    ┣ 📄 navbar_search.dart          // Recherche, suggestions et sélection
-   ┣ 📄 section_forecasts.dart      // Bas de la page - Affichage prévisions
    ┣ 📄 section_location.dart       // Haut de la page - lieu sélectionné
+   ┣ 📄 section_forecasts.dart      // Bas de la page - Affichage prévisions
    ┃
    ┣ 📂 forecasts_tab_list/         // Onglet "Par heure" :
    ┃ ┣ 📄 forecasts_tab_list.dart   // Vue principale
