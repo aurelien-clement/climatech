@@ -5,13 +5,9 @@
 
 # Accès et utilisation 
 
-### Vous pouvez accéder à l'application [sur ma page github](https://aurelien-clement.github.io/).
+### Vous pouvez accéder à l'application [sur ma page github](https://aurelien-clement.github.io/), mais vos requêtes peuvent être bloquées.
 
-> **EDIT 17/06/24** : Erreur CORS Polily résolue, l'application est fonctionnelle ✅
-
-
-<!-- 
-
+Lorsque vous rechercherez un lieu, il est possible qu'aucune proposition ne charge et qu'un message d'erreur apparaisse : des requêtes sont bloquées par votre navigateur par mesure de sécurité (CORS-origin).
 
 ### 1. Solution express
 
@@ -27,7 +23,7 @@
 > 3. Recherchez  `'--disable-extensions'` et ajoutez `'--disable-web-security'`
 
 
-_NB : Vous aurez le même problème de requête bloquée par le navigateur en téléchargeant la source et en l'exécutant depuis votre machine._ -->
+_NB : Vous aurez le même problème de requête bloquée par le navigateur en téléchargeant la source et en l'exécutant depuis votre machine._
 
 
 # Fonctionnalités et état  d'avancement
