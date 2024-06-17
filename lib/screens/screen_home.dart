@@ -298,7 +298,7 @@ class ScreenHomeState extends State<ScreenHome> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              "Choose a location to display the data",
+                              "Sélectionnez un lieu pour afficher les données météo",
                               textAlign: TextAlign.center,
                               style: AppTheme.heroSubtitle(isMobile),
                             ),

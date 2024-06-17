@@ -51935,7 +51935,7 @@ o=m.d
 if(o!=null){n=m.x
 n===$&&A.b()
 o=new A.D3(j,i.a.a<850,n,o,m.e,m.gavm(),m.gavi(),m.gauT(),m.Q,new A.aoK(m),l)
-i=o}else i=A.cU(A.a([A.bO("Choose a location to display the data",l,l,l,l,A.K6(j),B.bu,l)],k),B.Y,B.au,B.X)
+i=o}else i=A.cU(A.a([A.bO("Sélectionnez un lieu pour afficher les données météo",l,l,l,l,A.K6(j),B.bu,l)],k),B.Y,B.au,B.X)
 return A.aO4(new A.xT(new A.SP(s,B.a9T,l),0,B.u,new A.a2p(l,32,1/0,56+r),l),A.hd(B.bE,A.a([q,A.uY(!0,A.cU(A.a([p,A.id(i,1)],k),B.Y,B.au,B.X),B.ah,!0)],k),B.a1,B.bD,l),!0)}}
 A.aoP.prototype={
 $0(){},
