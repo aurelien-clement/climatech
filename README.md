@@ -5,7 +5,7 @@
 
 # Accès et utilisation 
 
-## Vous pouvez accéder à l'application [sur ma page github](https://aurelien-clement.github.io/).
+## Cette application est déployée sur [aurelien-clement.github.io](https://aurelien-clement.github.io/)
 
 ### 🟢 17/06/2024 - 15:50
 Le problème de CORS origin est résolu, l'application est pleinement fonctionnelle.
@@ -26,16 +26,13 @@ Lorsque vous rechercherez un lieu, il est possible qu'aucune proposition ne char
 > 3. Recherchez  `'--disable-extensions'` et ajoutez `'--disable-web-security'`
 
 
-_NB : Vous aurez le même problème de requête bloquée par le navigateur en téléchargeant la source et en l'exécutant depuis votre machine._
-
-
 # Fonctionnalités et état  d'avancement
 
 🟢 Trouver un lieu par recherche textuelle : **Terminé**
 
 🟢 Récupérer les données météo : **Terminé**
 
-🟢 Interface pour récupérer d'autres plages de dates : **Terminé**
+🟢 Interface pour récupérer d'autres plages de dates : **Terminé**comm
 
 🟢 Mettre en cache des données récupérées : **Terminé**
 
@@ -56,23 +53,33 @@ _NB : Vous aurez le même problème de requête bloquée par le navigateur en t�
 ### Services
 
 - **`Open-meteo.com`** permet de récupérer un jeu complet de données météorologique pour des coordonnées données
+
 - **`Google Maps Places`** propose 2 APIs que j'utilise pour que l'utilisateur sélectionne un lieu : 
+
   - `/Autocomplete` permet de récupérer une courte liste de suggestions pertinentes par rapport à la chaîne de caractères envoyée
+
   - `/Details` permet de récupérer des informations plus détaillées à partir de la suggestion choisie.
 
 ### Interface
 
 - **`fl_charts`** pour l'affichage de courbes à partir d'un jeu de données
+
 - **`Material Design 3`** pour avoir des widgets déjà fonctionnels et homogènes
+
 - **`Syncfusion Flutter Datepicker`** parce que même Material Design a ses limites
 
 ### Utilitaires
 
 - **`http`** pour appeler les différentes APIs
+
 - **`uuid`** pour générer un token à envoyer à l'API Autocomplete
+
 - **`intl`** pour le formattage des dates
+
 - **`localizations`** pour la gestion des heures locales
+
 - **`shared_preferences`** pour le stockage des favoris en local
+
 - **`dotenv`** pour récupérer les variables d'environnement
 
 
