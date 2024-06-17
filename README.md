@@ -5,12 +5,15 @@
 
 # Accès et utilisation 
 
-### Vous pouvez accéder à l'application [sur ma page github](https://aurelien-clement.github.io/), mais vos requêtes peuvent être bloquées.
+## Vous pouvez accéder à l'application [sur ma page github](https://aurelien-clement.github.io/).
 
+### 🟢 17/06/2024 - 15:50
+Le problème de CORS origin est résolu, l'application est pleinement fonctionnelle.
+
+### 🟠 17/06/2024 - 02:50 
 Lorsque vous rechercherez un lieu, il est possible qu'aucune proposition ne charge et qu'un message d'erreur apparaisse : des requêtes sont bloquées par votre navigateur par mesure de sécurité (CORS-origin).
 
 ### 1. Solution express
-
 > Actualisez la page et cliquez à nouveau dans le champ de recherche. le problème n'aura pas disparu, mais une localisation sera enregistrée dans vos favoris : vous pouvez cliquer dessus pour charger des données météo et utiliser l'interface.
 
 ### 2. Solution avancée (Flutter & Chrome)
